@@ -1,7 +1,7 @@
 const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
 addToShoppingCartButtons.forEach((addToCartButton) => {
   addToCartButton.addEventListener('click', addToCartClicked);
-});
+}); 
 
 const comprarButton = document.querySelector('.comprarButton');
 comprarButton.addEventListener('click', comprarButtonClicked);
@@ -73,7 +73,6 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   shoppingCartRow
     .querySelector('.shoppingCartItemQuantity')
     .addEventListener('change', quantityChanged);
-
   updateShoppingCartTotal();
 }
 
@@ -105,6 +104,24 @@ function removeShoppingCartItem(event) {
   const buttonClicked = event.target;
   buttonClicked.closest('.shoppingCartItem').remove();
   updateShoppingCartTotal();
+  // LIBRERIA SWEETALERT APLICADA
+  Swal.fire({
+    title: 'Eliminar Item',
+    text: "Estas Seguro De Eliminar Este Item",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Si, Eliminar!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        'Eliminado!',
+        'Tu Producto Ha Sido Eliminado Correctamente',
+        'success'
+      )
+    }
+  })
 }
 
 function quantityChanged(event) {
@@ -116,4 +133,13 @@ function quantityChanged(event) {
 function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = '';
   updateShoppingCartTotal();
+//SWEETALERT
+  Swal.fire(
+    'Gracias Por Tu Compra',
+    'Estamos Preparando Tu Pedido',
+    'success'
+  )
 }
+
+
+const carrito = JSON.parse(localStorage.getItem('carrito')) || []
