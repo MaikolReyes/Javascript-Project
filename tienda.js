@@ -25,6 +25,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
     'shoppingCartItemTitle'
   );
+  //OPERADOR++
   for (let i = 0; i < elementsTitle.length; i++) {
     if (elementsTitle[i].innerText === itemTitle) {
       let elementQuantity = elementsTitle[
@@ -32,6 +33,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
       ].parentElement.parentElement.parentElement.querySelector(
         '.shoppingCartItemQuantity'
       );
+      //OPERADOR ++
       elementQuantity.value++;
       $('.toast').toast('show');
       updateShoppingCartTotal();
@@ -126,6 +128,7 @@ function removeShoppingCartItem(event) {
 
 function quantityChanged(event) {
   const input = event.target;
+  //OPERADOR TERNIARIO
   input.value <= 0 ? (input.value = 1) : null;
   updateShoppingCartTotal();
 }
@@ -141,5 +144,5 @@ function comprarButtonClicked() {
   )
 }
 
-
+//OPERADORES
 const carrito = JSON.parse(localStorage.getItem('carrito')) || []
