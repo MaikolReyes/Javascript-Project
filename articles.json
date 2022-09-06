@@ -1,0 +1,55 @@
+[
+	{
+		"id": 1,
+		"description": "Amoladora",
+		"price": 2000.0,
+		"stock": 2,
+		"color": "Rojo",
+		"sku": "XXXXX",	
+		"image": "./img/amoladora.jpg"
+	},
+	{
+		"id": 2,
+		"description": "Candado",
+		"price": 1000.0,
+		"stock": 4,
+		"color": "Negro",
+		"sku": "XXXXXSS",
+		"image": "./img/hidro.jpg"	
+	},
+	{
+		"id": 3,
+		"description": "Rodillo",
+		"price": 500.0,
+		"stock": 4,
+		"color": "Blanco",
+		"sku": "XXXXXSSTT",	
+		"image": "./img/caja-herramientas1.jpg"
+	},
+	{
+		"id": 4,
+		"description": "Pincel",
+		"price": 1020.0,
+		"stock": 200,
+		"color": "Verde",
+		"sku": "XXXXXSSSX",
+		"image": "./img/caja-herramientas2.jpg"	
+	},
+	{
+		"id": 5,
+		"description": "Taladro",
+		"price": 20000.0,
+		"stock": 2,
+		"color": "Gris",
+		"sku": "XXXXXSSRR",
+		"image": "./img/maletin.jpg"
+	},
+	{
+		"id": 6,
+		"description": "Amoladora",
+		"price": 100000.0,
+		"quantity": 2,
+		"color": "Azul",
+		"sku": "XXXXXSSG"		
+	}
+]
