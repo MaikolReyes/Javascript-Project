@@ -10,7 +10,7 @@
 	},
 	{
 		"id": 2,
-		"description": "Candado",
+		"description": "hidrolavadora Lusqtoff",
 		"price": 1000.0,
 		"stock": 4,
 		"color": "Negro",
@@ -19,7 +19,7 @@
 	},
 	{
 		"id": 3,
-		"description": "Rodillo",
+		"description": "Caja de Herramientas",
 		"price": 500.0,
 		"stock": 4,
 		"color": "Blanco",
@@ -28,7 +28,7 @@
 	},
 	{
 		"id": 4,
-		"description": "Pincel",
+		"description": "Caja de Herramientas",
 		"price": 1020.0,
 		"stock": 200,
 		"color": "Verde",
@@ -37,7 +37,7 @@
 	},
 	{
 		"id": 5,
-		"description": "Taladro",
+		"description": "Maletin de Llaves",
 		"price": 20000.0,
 		"stock": 2,
 		"color": "Gris",
@@ -46,10 +46,10 @@
 	},
 	{
 		"id": 6,
-		"description": "Amoladora",
-		"price": 100000.0,
-		"quantity": 2,
-		"color": "Azul",
-		"sku": "XXXXXSSG"		
+		"description": "Taladro Percutor",
+		"price": 10000.0,
+		"stock": 2,
+		"sku": "XXXXXSSG",
+		"image": "./img/percutor.jpg"
 	}
 ]

@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 .logo {
@@ -32,8 +33,8 @@
 }
 
 .item-image {
-  height: 400px;
-  width: 80%;
+  height: 300px;
+  width: 50%;
 }
 
 .item-details {

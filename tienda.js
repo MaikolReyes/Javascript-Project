@@ -21,7 +21,7 @@ function addToCartClicked(event) {
   addItemToShoppingCart(itemTitle, itemPrice, itemImage);
 }
 
-function addItemToShoppingCart() {
+function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
     'shoppingCartItemTitle'
   );
@@ -123,13 +123,8 @@ function comprarButtonClicked() {
   )
 }
 
-//OPERADORES
-const carrito = JSON.parse(localStorage.getItem('carrito')) || []
-
+//UTILIZANDO FETCH
 const lista = document.querySelector('#listado')
-
-
-
 fetch('/articles.json')
 .then((res) => res.json())
 .then( (data) =>{
@@ -142,7 +137,8 @@ fetch('/articles.json')
         <img class="item-image" src="${producto.image}">
 
         <div class="item-details">
-            <h4 class="item-price">${producto.price}</h4>
+            <h4 class="item-price">$${producto.price}</h4>
+            <p>Disponibles <span>${producto.stock} </span></p>
             <button class="item-button btn btn-success addToCart">AGREGAR AL CARRITO</button>
         </div>
     </div>
